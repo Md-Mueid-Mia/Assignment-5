@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .btn-color{
+            background-color: #B4F461;
+            color: #111111;
+            font-size: 20px;
+            font-weight: 600;
+            border-radius: .5rem;
+        }
+    </style>
+    </head>
+    <body>
+        <!-- <button class=" px-8 py-3 btn-color">Blog</button> -->
+
+        <div class="navbar bg-base-100">
+            <div class="navbar-start">
+                <!-- <a class="btn btn-ghost text-xl">daisyUI</a> -->
+                <button class=" px-8 py-3 btn-color">Blog</button>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+                <ul class="menu menu-horizontal px-1">
+                    <li><a>Item 1</a></li>
+                    <li>
+                        <details>
+                            <summary>Parent</summary>
+                            <ul class="p-2">
+                                <li><a>Submenu 1</a></li>
+                                <li><a>Submenu 2</a></li>
+                            </ul>
+                        </details>
+                    </li>
+                    <li><a>Item 3</a></li>
+                </ul>
+            </div>
+            <div class="navbar-end">
+                <a class="btn">Button</a>
+            </div>
+        </div>
+    </body>
+</html>
