@@ -79,9 +79,11 @@
 
             <div
                 class="flex justify-center items-center space-x-4 mt-10 md:mt-16  pb-8 bg-transparent ">
-                <button class="btn-color  px-8 py-4 mr-10 ">Donate</button>
+                <button id="donate-btn"
+                    class="btn-color border rounded-lg  px-8 py-4 mr-10 ">Donate</button>
                 <!-- need to add class name by javascript ******************* btn-color ************************* -->
-                <button class=" border rounded-lg  px-8 py-4">History</button>
+                <button id="history-btn"
+                    class=" border rounded-lg  px-8 py-4">History</button>
             </div>
         </header>
         <main class="container px-6  mx-auto overflow-hidden">
@@ -89,7 +91,7 @@
 
             <!-- card section start here  -->
 
-            <section>
+            <section id="donate-section" class>
                 <!-- card 1 -->
                 <div
                     class="card lg:card-side shadow-xl p-8 card-style mb-8">
@@ -100,14 +102,14 @@
                     </figure>
                     <div class="card-body p-0 md:pl-8 lg:w-2/4">
                         <div
-                            class="flex justify-center space-x-2 w-28 rounded-lg p-3 bg-[#1111110D] mb-4 mt-8 lg:mt-5">
+                            class="flex justify-center space-x-2 w-36 rounded-lg p-3 bg-[#1111110D] mb-4 mt-8 lg:mt-5">
                             <img src="./assets/coin.png" alt>
                             <p class="text-gray"><span
                                     id="donate-result-show-noakhli">0</span>
                                 BDT</p>
                         </div>
-                        <h2 class="card-title">Donate for Flood Relief in
-                            Feni,Bangladesh</h2>
+                        <h2 id="noakhaliTitle" class="card-title">Donate for
+                            Flood at Noakhali, Bangladesh</h2>
                         <p class="text-gray font-light leading-7"> The recent
                             floods in Feni have devastated local communities,
                             leading to severe disruption and loss. Your generous
@@ -222,7 +224,9 @@
             <!-- history section start-->
             <section>
                 <div id="history"
-                    class="container mx-auto p-4 pt-6 md:p-6 mb-6 hidden"></div>
+                    class="container mx-auto p-4 pt-6 md:p-6 mb-6 hidden">
+
+                </div>
             </section>
         </main>
         <script src="./js/index.js"></script>
