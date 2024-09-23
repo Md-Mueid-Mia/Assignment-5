@@ -72,7 +72,7 @@
                 </div>
                 <div class="flex justify-center items-center space-x-3">
                     <img class src="./assets/coin.png" alt>
-                    <p id="balance" class="text-gray text-xl font-medium">5500
+                    <p id="balance" class="text-gray text-xl font-medium">10500
                         BDT</p>
                 </div>
             </nav>
@@ -80,8 +80,8 @@
             <div
                 class="flex justify-center items-center space-x-4 mt-10 md:mt-16  pb-8 bg-transparent ">
                 <button id="donate-btn"
-                    class="btn-color border rounded-lg  px-8 py-4 mr-10 ">Donate</button>
-                <!-- need to add class name by javascript ******************* btn-color ************************* -->
+                    class="btn-color border rounded-lg  px-8 py-4 mr-2 md:mr-10 ">Donate</button>
+
                 <button id="history-btn"
                     class=" border rounded-lg  px-8 py-4">History</button>
             </div>
@@ -145,13 +145,14 @@
                     </figure>
                     <div class="card-body p-0 md:pl-8 lg:w-2/4">
                         <div
-                            class="flex justify-center space-x-2 w-28 rounded-lg p-3 bg-[#1111110D] mb-4 mt-8 lg:mt-5">
+                            class="flex justify-center space-x-2 w-36 rounded-lg p-3 bg-[#1111110D] mb-4 mt-8 lg:mt-5">
                             <img src="./assets/coin.png" alt>
                             <p class="text-gray"><span
                                     id="donate-result-show-feni">0</span>
                                 BDT</p>
                         </div>
-                        <h2 class="card-title">Donate for Flood Relief in
+                        <h2 id="feni-title" class="card-title">Donate for Flood
+                            Relief in
                             Feni,Bangladesh</h2>
                         <p class="text-gray font-light leading-7"> The recent
                             floods in
@@ -185,13 +186,14 @@
                     </figure>
                     <div class="card-body p-0 md:pl-8 lg:w-2/4">
                         <div
-                            class="flex justify-center space-x-2 w-28 rounded-lg p-3 bg-[#1111110D] mb-4 mt-8 lg:mt-5">
+                            class="flex justify-center space-x-2 w-36 rounded-lg p-3 bg-[#1111110D] mb-4 mt-8 lg:mt-5">
                             <img src="./assets/coin.png" alt>
                             <p class="text-gray"><span
                                     id="donate-result-show-student">0</span>
                                 BDT</p>
                         </div>
-                        <h2 class="card-title">Aid for Injured in the Quota
+                        <h2 id="student-title" class="card-title">Aid for
+                            Injured in the Quota
                             Movement</h2>
                         <p class="text-gray font-light leading-7"> The recent
                             Quota movement has resulted in numerous injuries and
@@ -220,6 +222,21 @@
                 </div>
 
             </section>
+            <!-- modal section -->
+
+            <dialog id="my_modal_1" class="modal">
+                <div class="modal-box text-center">
+                    <h3 class="text-4xl font-bold">Congrats!</h3>
+                    <img class=" mx-auto mt-4" src="./assets/coin.png" alt>
+                    <p class="py-4">You Have Donated For Humankind</p>
+                    <h3 class="text-lg font-bold">Successfully</h3>
+                    <div class="modal-action">
+                        <form method="dialog" class="mx-auto">
+                            <button class="btn">Close confirmation</button>
+                        </form>
+                    </div>
+                </div>
+            </dialog>
 
             <!-- history section start-->
             <section>
@@ -229,6 +246,7 @@
                 </div>
             </section>
         </main>
+        <script src="./js/utilties.js"></script>
         <script src="./js/index.js"></script>
     </body>
 </html>
